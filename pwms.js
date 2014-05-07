@@ -74,7 +74,7 @@ var pwms = function() {
 
 			//flash to update the client and service regarding the successful pairing
 			session.service.emit('started', "Both parties have connected to your session");
-			session.client.emit('started', "Both parties have connected to your session");
+			session.client.socket.emit('started', "Both parties have connected to your session");
 
 		},
 
