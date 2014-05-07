@@ -36,7 +36,7 @@ app.use(express.bodyParser());
 app.use(express.static(__dirname + '/static')); 
 
 
-app.get('/client/', function(req, res) {
+app.get('/invitation', function(req, res) {
 
 	res.sendfile(__dirname + '/static/client.html');
 
